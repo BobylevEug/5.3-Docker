@@ -26,3 +26,9 @@
   Контейнер.
   
 ## 2. Опубликуйте созданный форк в своем репозитории и предоставьте ответ в виде ссылки на докерхаб-репо.
+
+Команды:
+- Запуск docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+- создан файл на хосте index.html
+- копирование файла с хоста в контейнер docker cp /home/kali/Documents/apache/index.html thirsty_chandrasekhar:/usr/local/apache2/htdocs
+- проверка docker exec -it thirsty_chandrasekhar bash
